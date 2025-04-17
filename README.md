@@ -36,6 +36,17 @@ Before setting up the project, make sure the following tools are installed on yo
 - **Node.js & npm** 
 - **Git** 
 
+## Configure Environment Variables
+
+- **open your .env file and update it with your database and other environment settings. Make sure the following values are correctly set**
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
+
 ##  Getting Started
 
 ### Clone the Repository
