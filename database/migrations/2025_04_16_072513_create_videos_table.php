@@ -13,6 +13,16 @@ return new class extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('thumbnailUrl');
+            $table->string('duration');
+            $table->string('uploadTime');
+            $table->string('views');
+            $table->string('author');
+            $table->string('videoUrl');
+            $table->text('description')->nullable();
+            $table->string('subscriber');
+            $table->boolean('isLive')->default(false);
             $table->timestamps();
         });
     }

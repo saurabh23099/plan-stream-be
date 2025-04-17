@@ -1,8 +1,8 @@
-# 🎬 YouTube Video Preview 
+## VStream
 
 This project is a simplified YouTube-like application that allows users to view video previews, titles, authors, views, and upload dates. The app is built with **React + Vite + TypeScript** on the frontend and **Laravel** on the backend.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React, Vite, TypeScript, Jest
 - **Backend:** Laravel 12, REST API
@@ -47,6 +47,25 @@ cd youtube-be
 
 composer install
 
+## Migrate the databse
+
+**Refresh Laravel Configuration and Cache:**
+
+php artisan config:cache  
+php artisan cache:clear
+
+**Apply Database Migrations:**
+
+php artisan migrate
+
+**Seed the Database**
+
+php artisan db:seed
+
 ## Start the Development Server
 
 php artisan serve
+
+## Screenshots
+
+![alt text](image.png)
